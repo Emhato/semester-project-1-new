@@ -9,14 +9,15 @@
 /* header styling */
 
 h1 {
-    background-image: url(../images/header.jpg);
+    /* background-image: url(../images/header.jpg);
     background-position: center;
-    background-size: cover;
-    font-size: 3rem;
+    background-size: cover; */
+    font-size: 1rem;
     margin-right: 20px;
-    line-height: 76px;
+    font-style: italic;
+    /* line-height: 76px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .community {
@@ -64,6 +65,10 @@ img {
     margin: 20px;
 }
 
+.reaktor {
+    margin-top: 100px;
+}
+
 
 @media only screen and (min-width: 768px) {
     /* header */
@@ -76,7 +81,9 @@ img {
     }
 
     h1 {
+
         margin: auto;
+        margin-top: 100px;
     }
 }
 

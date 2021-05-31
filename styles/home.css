@@ -1,0 +1,94 @@
+/* menu */
+
+.home {
+    background-color: var(--pink);
+    padding: 5px;
+    color: #fff;
+}
+
+/* header styling */
+
+h1 {
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 3rem;
+    margin-right: 20px;
+    line-height: 76px;
+    display: flex;
+    flex-direction: column;
+}
+
+.community {
+    color: var(--blue);
+}
+
+.science {
+    color: var(--purple);
+}
+
+.museum {
+    color: var(--green);
+}
+
+/* .community, .science, .museum {
+    align-self: center;
+} */
+
+/* text styling */
+
+h2 {
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* Overall layout */
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.cta {
+    align-self: center;
+}
+
+/* images */ 
+
+img {
+    margin: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* header */
+    .science {
+        align-self: center;
+    }
+    
+    .museum {
+        align-self: flex-end;
+    }
+
+    h1 {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* header */
+    /* h1 {
+        flex-direction: row;
+        justify-content: space-around;
+    } */
+
+    h1 {
+        font-size: 3.7rem;
+        max-width: 1200px;
+    }
+}

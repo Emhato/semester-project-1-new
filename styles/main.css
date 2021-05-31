@@ -1,0 +1,125 @@
+/* root styling */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* :root {
+    --pink: #F2385A;
+    --blue: #2C72A8;
+    --yellow: #7A15A8;
+    --brown: #C26439;
+    --green: #457A54;
+} */
+
+:root {
+    --pink: #F2385A;
+    --blue: #2C72A8;
+    --purple: #7A15A8;
+    --brown: #C26439;
+    --green: #457A54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Text styling */
+
+h1, h2, h3, p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+p {
+font-family: 'Roboto', sans-serif;
+}
+
+/* buttons */
+
+button {
+    /* background-color: var(--pink); */
+    background: rgb(242,56,90);
+    background: linear-gradient(90deg, rgba(242,56,90,1) 0%, rgba(44,114,168,1) 100%);
+    /* border: solid 2px var(--blue); */
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    border: solid 2px var(--pink);
+    margin: 20px;
+    box-shadow: 0 10px 10px 0 rgba(242,56,90,0.5);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    /* background: rgb(44,114,168);
+    background: linear-gradient(90deg, rgba(44,114,168,1) 0%, rgba(242,56,90,1) 100%); */
+    box-shadow: unset;
+    /* border: solid 2px var(--pink); */
+}
+
+/* Logo */
+
+.atom-logo {
+    filter: invert(37%) sepia(84%) saturate(4055%) hue-rotate(330deg) brightness(98%) contrast(94%);
+    height: 80px;
+}
+
+/* source: https://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/ 
+and https://codepen.io/sosuke/pen/Pjoqqp */
+
+
+/*Mobile top nav*/
+
+
+.fa-times {
+    display: none;
+}
+
+nav {
+    display: none;
+    height: 100%;
+}
+  
+li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    padding-top: 60px;
+}
+  
+li a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-bottom: solid 1px;
+}
+  
+.fa-bars, .fa-times {
+    padding-right: 20px;
+    padding-top: 20px;
+    /* position: absolute;
+    right: 0; */
+    padding: 20px;
+    color: var(--pink);
+}
+
+.top-nav-mobile {
+    display: flex;
+    /* background-position: center top 12%;
+    background-repeat: no-repeat; */
+    align-items: center;
+    height: 80px;
+}
+
+/* Bottom nav */
+
+.bottom-nav {
+    background: rgb(69,122,84);
+    background: linear-gradient(0deg, rgba(69,122,84,0.2) 0%, rgba(122,21,168,0.2) 50%, rgba(44,114,168,0.2) 100%);
+}

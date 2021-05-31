@@ -40,10 +40,8 @@ font-family: 'Roboto', sans-serif;
 /* buttons */
 
 button {
-    /* background-color: var(--pink); */
     background: rgb(242,56,90);
     background: linear-gradient(90deg, rgba(242,56,90,1) 0%, rgba(44,114,168,1) 100%);
-    /* border: solid 2px var(--blue); */
     color: #fff;
     font-size: 1.5rem;
     font-weight: 700;
@@ -56,10 +54,7 @@ button {
 }
 
 button:hover {
-    /* background: rgb(44,114,168);
-    background: linear-gradient(90deg, rgba(44,114,168,1) 0%, rgba(242,56,90,1) 100%); */
     box-shadow: unset;
-    /* border: solid 2px var(--pink); */
 }
 
 /* Logo */
@@ -91,35 +86,75 @@ li {
     padding: 20px 0 20px 0;
     text-align: center;
     padding-top: 60px;
+    list-style: none;
 }
   
 li a {
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 3px;
     border-bottom: solid 1px;
+    color: #000;
 }
   
 .fa-bars, .fa-times {
     padding-right: 20px;
     padding-top: 20px;
-    /* position: absolute;
-    right: 0; */
     padding: 20px;
     color: var(--pink);
 }
 
 .top-nav-mobile {
     display: flex;
-    /* background-position: center top 12%;
-    background-repeat: no-repeat; */
     align-items: center;
     height: 80px;
 }
 
 /* Bottom nav */
 
+
 .bottom-nav {
     background: rgb(69,122,84);
     background: linear-gradient(0deg, rgba(69,122,84,0.2) 0%, rgba(122,21,168,0.2) 50%, rgba(44,114,168,0.2) 100%);
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.list-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-bottom a {
+    font-size: 0.8rem;
+    border-bottom: none;
+}
+
+.home-bottom, .explore-bottom, .exhibition-bottom, .visit-bottom {
+    padding-top: 20px;
+    margin: 0;
+    color: #000;
+}
+
+.info-bottom {
+    font-size: 0.6rem;
+    margin: 20px 0 0px 20px;
+    
+}
+
+.info-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin: -35px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
 }

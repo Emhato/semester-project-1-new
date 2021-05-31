@@ -47,7 +47,7 @@ button {
     font-weight: 700;
     padding: 10px;
     border: solid 2px var(--pink);
-    margin: 20px;
+    margin: 40px 0;
     box-shadow: 0 10px 10px 0 rgba(242,56,90,0.5);
     transition: 0.4s;
     cursor: pointer;
@@ -80,8 +80,15 @@ and https://codepen.io/sosuke/pen/Pjoqqp */
 
 nav {
     display: none;
-    height: 100%;
+    /* background: rgb(69,122,84);
+    background: linear-gradient(0deg, rgba(69,122,84,0.1) 0%, rgba(122,21,168,0.1) 50%, rgba(44,114,168,0.1) 100%); */
+    background-image: url(../images/header.jpg);
+    min-height: 100vh;
 }
+
+/* source: https://www.geeksforgeeks.org/how-to-cover-the-whole-screen-when-the-hamburger-menu-is-pressed-on-smaller-screens/ */
+
+
   
 li {
     list-style: none;
@@ -97,7 +104,6 @@ li a {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 3px;
-    border-bottom: solid 1px;
     color: #000;
 }
   
@@ -124,8 +130,10 @@ li a {
 
 
 .bottom-nav {
-    background: rgb(69,122,84);
-    background: linear-gradient(0deg, rgba(69,122,84,0.2) 0%, rgba(122,21,168,0.2) 50%, rgba(44,114,168,0.2) 100%);
+    /* background: rgb(69,122,84);
+    background: linear-gradient(0deg, rgba(69,122,84,0.1) 0%, rgba(122,21,168,0.1) 50%, rgba(44,114,168,0.1) 100%); */
+    background-image: url(../images/header.jpg);
+    border-top: solid 1px var(--pink);
     margin-top: 50px;
     margin-bottom: 0;
 }
@@ -137,7 +145,6 @@ li a {
 
 .list-bottom a {
     font-size: 0.8rem;
-    border-bottom: none;
 }
 
 .home-bottom, .explore-bottom, .exhibition-bottom, .visit-bottom {
@@ -198,7 +205,7 @@ a {
 
 /* Ipad and above */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     /* top nav */
 
     .hamburger-button {
@@ -208,8 +215,9 @@ a {
     nav {
         margin-top: 30px;
         display: block;
-        margin-bottom: 30px;
-
+        margin-bottom: 10px;
+        background-image: unset;
+        min-height: unset;
     }
 
     .list-top {
@@ -225,6 +233,16 @@ a {
         padding: 20px;
     }
 
+
+    /* bottom nav */
+
+    .list-bottom a {
+        font-size: 1rem;
+    }
+
+    .info-bottom {
+        font-size: 0.8rem;
+    }
 
 
     /* .top-nav-mobile {

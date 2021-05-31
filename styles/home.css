@@ -14,6 +14,7 @@ h1 {
     background-size: cover; */
     font-size: 1rem;
     margin-right: 20px;
+    margin-left: 20px;
     font-style: italic;
     /* line-height: 76px;
     display: flex;
@@ -65,10 +66,45 @@ img {
     margin: 20px;
 }
 
-.reaktor {
-    margin-top: 100px;
+
+
+.image {
+    display: none;
 }
 
+.reaktor {
+    margin-top: 100px;
+    display: block;
+    /* order: 1; */
+}
+
+/* h1 {
+    order: 2;
+}
+
+.cta {
+    order: 3;
+}
+
+.p1 {
+    order: 4;
+}
+
+.p2 {
+    order: 5;
+}
+
+.vr-briller {
+    order: 6;
+}
+
+.p3 {
+    order: 7;
+}
+
+.mammut {
+    order: 8;
+} */
 
 @media only screen and (min-width: 768px) {
     /* header */
@@ -80,22 +116,122 @@ img {
         align-self: flex-end;
     }
 
-    h1 {
 
-        margin: auto;
-        margin-top: 100px;
-    }
+
+
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     /* header */
     /* h1 {
         flex-direction: row;
         justify-content: space-around;
     } */
 
-    h1 {
+    /* h1 {
         font-size: 3.7rem;
         max-width: 1200px;
+    } */
+
+    /* image */
+
+    .reaktor {
+        margin-top: 50px;
     }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* layout */
+
+    main {
+        max-width: 1200px;
+    }
+
+    /* img {
+        width: 500px;
+    } */
+    
+    /* .text-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+
+    .text-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 75px 100px 80px 80px 150px 40px;
+        grid-template-areas: 
+            'h1 reaktor'
+            'cta reaktor'
+            'p1 reaktor'
+            'p2 reaktor'
+            'p3 reaktor'
+            'p3 arrows';
+    }
+
+    .reaktor {
+        grid-area: reaktor;
+        max-width: 600px;
+        margin-top: 20px;
+    }
+
+    .arrows {
+        grid-area: arrows;
+        justify-self: center;
+    }
+
+    h1 {
+        grid-area: h1;
+    }
+
+    .cta {
+        grid-area: cta;
+        justify-self: center;
+    }
+
+    .p1 {
+        grid-area: p1;
+    }
+
+    .p2 {
+        grid-area: p2;
+    }
+
+    .p3 {
+        grid-area: p3;
+    }
+
+    .vr-briller, .mammut {
+        display: none;
+    }
+
+/* 
+    .reaktor {
+        max-width: 700px;
+    }
+
+    .vr-briller, .mammut {
+        max-width: 300px;
+    }
+
+    .image-container {
+        max-width: 700px;
+    }
+
+    .main-container {
+        display: flex;
+    }
+
+    .small-images {
+        display: flex;
+        max-width: 700px;
+    } */
+
+
+
 }

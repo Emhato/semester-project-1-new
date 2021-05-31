@@ -157,30 +157,26 @@ li a {
     justify-content: space-between;
 }
 
-.bottom-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    margin: -35px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    /* position: absolute;
-    bottom: 0;
-    right: 0; */
-}
+
 
 /* Logo */
+
+a {
+    text-decoration: none;
+}
 
 .text-logo {
     border: solid var(--pink);
     display: inline-block;
     padding: 5px;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
 }
 
 .text-logo p {
     margin: 0;
+
 }
 
 .logo-text {
@@ -189,9 +185,20 @@ li a {
     line-height: 20px;
 }
 
+.bottom-logo {
+    border: solid var(--pink);
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom-logo p {
+    margin: 0;
+}
+
 /* Ipad and above */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     /* top nav */
 
     .hamburger-button {
@@ -199,6 +206,7 @@ li a {
     }
 
     nav {
+        margin-top: 30px;
         display: block;
         margin-bottom: 30px;
 

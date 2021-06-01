@@ -27,10 +27,14 @@ body {
 
 /* Text styling */
 
-h1, h2, h3, p {
+/* h1, h2, h3, p {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+} */
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {

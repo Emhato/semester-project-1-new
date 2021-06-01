@@ -33,6 +33,11 @@ body {
     margin-top: 20px;
 } */
 
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -63,10 +68,22 @@ button:hover {
 
 /* Logo */
 
-.atom-logo {
+.community {
+    color: var(--blue);
+}
+
+.science {
+    color: var(--purple);
+}
+
+.museum {
+    color: var(--green);
+}
+
+/* .atom-logo {
     filter: invert(37%) sepia(84%) saturate(4055%) hue-rotate(330deg) brightness(98%) contrast(94%);
     height: 80px;
-}
+} */
 
 /* source: https://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/ 
 and https://codepen.io/sosuke/pen/Pjoqqp */

@@ -1,0 +1,91 @@
+/* menu */
+
+.exhibition {
+    background-color: var(--pink);
+    padding: 5px;
+    color: #fff;
+}
+
+/* layout */
+
+.hide-1 {
+    display: none;
+}
+
+/* text style */
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.cosmology h2 {
+    color: var(--blue);
+}
+
+.evolution h2 {
+    color: var(--yellow);
+}
+
+.biomed h2 {
+    color: var(--green);
+}
+
+.ecology h2 {
+    color: var(--brown);
+}
+
+.ai h2 {
+    color: var(--pink);
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    /* layout*/
+
+    .hide-1 {
+        display: block;
+        grid-area: image;
+        margin-top: 40px;
+    }
+
+    h1 {
+        grid-area: h1;
+    }
+
+    .cosmology {
+        grid-area: cosmology;
+    }
+
+    .evolution {
+        grid-area: evolution;
+    }
+
+    .biomed {
+        grid-area: biomed;
+    }
+
+    .ecology {
+        grid-area: ecology;
+    }
+
+    .ai {
+        grid-area: ai;
+    }
+
+    .main-container {
+        max-width: 1700px;
+        display: grid;
+        grid-template-columns: auto 25% 25% 25% auto;
+        grid-template-rows: 125px 750px 900px;
+        column-gap: 40px;
+        grid-template-areas: 
+           ". h1 . . ."
+           ". image cosmology evolution ."
+           ". biomed ecology ai .";
+    }
+}

@@ -78,6 +78,10 @@ img {
     /* order: 1; */
 }
 
+.arrows {
+    display: none;
+}
+
 /* h1 {
     order: 2;
 }
@@ -164,13 +168,12 @@ img {
     .text-container {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 75px 100px 80px 80px 150px 40px;
+        grid-template-rows: 75px 100px 80px 80px 150px;
         grid-template-areas: 
             'h1 reaktor'
             'cta reaktor'
             'p1 reaktor'
             'p2 reaktor'
-            'p3 reaktor'
             'p3 arrows';
     }
 
@@ -181,8 +184,26 @@ img {
     }
 
     .arrows {
+        display: block;
         grid-area: arrows;
         justify-self: center;
+        align-self: center;
+        color: var(--pink);
+        cursor: pointer;
+    }
+
+    .arrow-left, .arrow-right {
+        font-size: 3rem;
+    }
+
+    /* source: https://fontawesome.com/v4.7/examples/ */
+
+    .fa-chevron-left:hover {
+        color: var(--blue);
+    }
+
+    .fa-chevron-right:hover {
+        color: var(--blue);
     }
 
     h1 {

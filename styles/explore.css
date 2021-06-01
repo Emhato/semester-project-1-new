@@ -1,0 +1,67 @@
+/* menu */
+
+.explor {
+    background-color: var(--pink);
+    padding: 5px;
+    color: #fff;
+}
+
+/* text style */
+
+.kids h2 {
+    color: var(--blue);
+}
+
+.teachers h2 {
+    color: var(--yellow);
+}
+
+.researchers h2 {
+    color: var(--green);
+}
+
+.bigger {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--blue);
+    font-style: italic;
+}
+
+/* for laptop */
+
+@media only screen and (min-width: 1200px) {
+
+    /* layout */
+
+    h1 {
+        grid-area: h1;
+    }
+
+    .kids {
+        grid-area: kids;
+    }
+
+    .teachers {
+        grid-area: teachers;
+    }
+
+    .researchers {
+        grid-area: researchers;
+    }
+
+    .main-container {
+        max-width: 1700px;
+        display: grid;
+        grid-template-columns: auto 25% 25% 25% auto;
+        grid-template-rows: 125px auto;
+        column-gap: 40px;
+        grid-template-areas: 
+            ". h1 . . ."
+            ". kids teachers researchers .";
+    }
+}

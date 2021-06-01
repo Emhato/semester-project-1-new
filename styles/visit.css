@@ -1,0 +1,61 @@
+/* menu */
+
+.visit {
+    background-color: var(--pink);
+    padding: 5px;
+    color: #fff;
+}
+
+/* layout */
+
+.outside {
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+   
+    /* text style */
+    p {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /* layout*/
+
+    h1 {
+        grid-area: h1;
+    }
+
+    .hide {
+        display: block;
+        grid-area: whale;
+        margin-top: 5px;
+    }
+
+    .outside {
+        display: none;
+    }
+
+    .column-2 {
+        grid-area: column-2;
+    }
+
+    .column-3 {
+        grid-area: column-3;
+    }
+
+    .main-container {
+        max-width: 1700px;
+        display: grid;
+        grid-template-columns: auto 25% 25% 25% auto;
+        grid-template-rows: 125px auto;
+        column-gap: 40px;
+        grid-template-areas: 
+           ". h1 . . ."
+           ". whale column-2 column-3 .";
+    }
+}

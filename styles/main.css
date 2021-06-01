@@ -218,6 +218,7 @@ a {
         margin-bottom: 10px;
         background-image: unset;
         min-height: unset;
+        border-bottom: solid 1px var(--pink);
     }
 
     .list-top {

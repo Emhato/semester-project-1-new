@@ -1,44 +1,80 @@
 /* menu */
 
-.explor {
+.explore {
     background-color: var(--pink);
     padding: 5px;
     color: #fff;
 }
 
+/* images */
+
+img {
+    max-width: 300px;
+}
+
+/* cards/ layout */
+
+.card {
+    max-width: 300px;
+    align-self: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
 /* text style */
+
+h1 {
+    margin-top: 100px;
+    align-self: center;
+}
+
+p {
+    margin: 0;
+    line-height: 25px;
+}
+
+h2 {
+    margin: 50px 0 5px 0;
+}
 
 .kids h2 {
     color: var(--blue);
 }
 
 .teachers h2 {
-    color: var(--yellow);
+    color: var(--purple);
 }
 
 .researchers h2 {
     color: var(--green);
 }
 
+.link {
+    text-decoration: none;
+    color: var(--blue);
+    font-style: italic;
+} 
+
+/* 
 .bigger {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1rem;
 }
 
-.link {
-    text-decoration: none;
-    color: var(--blue);
-    font-style: italic;
-}
+*/
 
 /* for laptop */
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) { */
 
     /* layout */
 
-    h1 {
+    /* h1 {
         grid-area: h1;
     }
 
@@ -64,4 +100,4 @@
             ". h1 . . ."
             ". kids teachers researchers .";
     }
-}
+} */

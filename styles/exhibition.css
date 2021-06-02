@@ -26,18 +26,10 @@ img {
 .card-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 /* text style */
 
-/* h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-bottom: 10px;
-} */
 
 p {
     margin-top: 10px;
@@ -63,50 +55,38 @@ p {
     color: var(--pink);
 }
 
+@media only screen and (min-width: 768px) {
 
-/* @media only screen and (min-width: 1200px) { */
+    img {
+        max-width: 550px;
+    }
 
-    /* layout*/
+    .card {
+        max-width: 550px;
+    }
+}
 
-    /* .hide-1 {
+@media only screen and (min-width: 1200px) {
+
+    .hide-1 {
         display: block;
-        grid-area: image;
-        margin-top: 40px;
+        margin-top: 85px;
     }
 
-    h1 {
-        grid-area: h1;
+    img {
+        max-width: 350px;
     }
 
-    .cosmology {
-        grid-area: cosmology;
+    .card {
+        max-width: 350px;
+        align-self: flex-start;
     }
 
-    .evolution {
-        grid-area: evolution;
+    .card-container {
+        max-width: 1200px;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-
-    .biomed {
-        grid-area: biomed;
-    }
-
-    .ecology {
-        grid-area: ecology;
-    }
-
-    .ai {
-        grid-area: ai;
-    }
-
-    .main-container {
-        max-width: 1700px;
-        display: grid;
-        grid-template-columns: auto 25% 25% 25% auto;
-        grid-template-rows: 125px 750px 900px;
-        column-gap: 40px;
-        grid-template-areas: 
-           ". h1 . . ."
-           ". image cosmology evolution ."
-           ". biomed ecology ai .";
-    }
-} */
+}

@@ -12,9 +12,6 @@ const image8 = document.querySelector(".image8");
 const leftArrow = document.querySelector(".arrow-left");
 const rightArrow = document.querySelector(".arrow-right");
 
-// if (!image2.classList.contains("reaktor")) {
-//     image2.style.display = "none";
-// }
 
 rightArrow.addEventListener("click", rightArrowKey);
 rightArrow.onkeydown = rightArrowKey;

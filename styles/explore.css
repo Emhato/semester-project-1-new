@@ -22,15 +22,9 @@ img {
 .card-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 /* text style */
-
-/* h1 {
-    margin-top: 100px;
-    text-align: center;
-} */
 
 p {
     margin: 0;
@@ -106,50 +100,4 @@ p {
     .researchers {
         align-self: flex-start;
     }
-    /* img {
-        min-width: 100;
-    }
-
-    .kids {
-        max-width: 100;
-    } */
-
-
-    /* .card-container {
-        flex-direction: row;
-    } */
 }
-
-/* for laptop */
-
-/* @media only screen and (min-width: 1200px) { */
-
-    /* layout */
-
-    /* h1 {
-        grid-area: h1;
-    }
-
-    .kids {
-        grid-area: kids;
-    }
-
-    .teachers {
-        grid-area: teachers;
-    }
-
-    .researchers {
-        grid-area: researchers;
-    }
-
-    .main-container {
-        max-width: 1700px;
-        display: grid;
-        grid-template-columns: auto 25% 25% 25% auto;
-        grid-template-rows: 125px auto;
-        column-gap: 40px;
-        grid-template-areas: 
-            ". h1 . . ."
-            ". kids teachers researchers .";
-    }
-} */

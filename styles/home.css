@@ -30,7 +30,6 @@ h2 {
 .text-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 
 .cta {
@@ -52,40 +51,11 @@ img {
 .reaktor {
     margin-top: 100px;
     display: block;
-    /* order: 1; */
 }
 
 .arrows {
     display: none;
 }
-
-/* h1 {
-    order: 2;
-}
-
-.cta {
-    order: 3;
-}
-
-.p1 {
-    order: 4;
-}
-
-.p2 {
-    order: 5;
-}
-
-.vr-briller {
-    order: 6;
-}
-
-.p3 {
-    order: 7;
-}
-
-.mammut {
-    order: 8;
-} */
 
 @media only screen and (min-width: 768px) {
     /* header */
@@ -103,16 +73,6 @@ img {
 }
 
 @media only screen and (min-width: 1024px) {
-    /* header */
-    /* h1 {
-        flex-direction: row;
-        justify-content: space-around;
-    } */
-
-    /* h1 {
-        font-size: 3.7rem;
-        max-width: 1200px;
-    } */
 
     /* image */
 
@@ -132,15 +92,6 @@ img {
     main {
         max-width: 1200px;
     }
-
-    /* img {
-        width: 500px;
-    } */
-    
-    /* .text-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    } */
 
     .text-container {
         display: grid;
@@ -207,29 +158,4 @@ img {
     .vr-briller, .mammut {
         display: none;
     }
-
-/* 
-    .reaktor {
-        max-width: 700px;
-    }
-
-    .vr-briller, .mammut {
-        max-width: 300px;
-    }
-
-    .image-container {
-        max-width: 700px;
-    }
-
-    .main-container {
-        display: flex;
-    }
-
-    .small-images {
-        display: flex;
-        max-width: 700px;
-    } */
-
-
-
 }

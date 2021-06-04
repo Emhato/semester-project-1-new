@@ -4,14 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* :root {
-    --pink: #F2385A;
-    --blue: #2C72A8;
-    --yellow: #7A15A8;
-    --brown: #C26439;
-    --green: #457A54;
-} */
-
 :root {
     --pink: #F2385A;
     --blue: #2C72A8;
@@ -27,11 +19,6 @@ body {
 
 /* Text styling */
 
-/* h1, h2, h3, p {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-} */
 
 h2 {
     margin: 50px 0 5px 0;
@@ -82,15 +69,6 @@ button:hover {
     color: var(--green);
 }
 
-/* .atom-logo {
-    filter: invert(37%) sepia(84%) saturate(4055%) hue-rotate(330deg) brightness(98%) contrast(94%);
-    height: 80px;
-} */
-
-/* source: https://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/ 
-and https://codepen.io/sosuke/pen/Pjoqqp */
-
-
 /*Mobile top nav*/
 
 .home, .explore, .exhibition, .visit {
@@ -103,8 +81,6 @@ and https://codepen.io/sosuke/pen/Pjoqqp */
 
 nav {
     display: none;
-    /* background: rgb(69,122,84);
-    background: linear-gradient(0deg, rgba(69,122,84,0.1) 0%, rgba(122,21,168,0.1) 50%, rgba(44,114,168,0.1) 100%); */
     background-image: url(../images/header.jpg);
     min-height: 100vh;
 }
@@ -153,8 +129,6 @@ li a {
 
 
 .bottom-nav {
-    /* background: rgb(69,122,84);
-    background: linear-gradient(0deg, rgba(69,122,84,0.1) 0%, rgba(122,21,168,0.1) 50%, rgba(44,114,168,0.1) 100%); */
     background-image: url(../images/header.jpg);
     border-top: solid 1px var(--pink);
     margin-top: 50px;
@@ -186,8 +160,6 @@ li a {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 /* Logo */
 
@@ -268,42 +240,4 @@ a {
         font-size: 0.8rem;
     }
 
-
-    /* .top-nav-mobile {
-        display: none;
-    }
-
-    nav {
-        display: block;
-        background: rgb(254,189,58);
-        background: linear-gradient(90deg, rgba(255,174,1,1) 0%, rgba(255,207,73,1) 60%, rgba(252,130,0,1) 100%);
-        background-repeat: no-repeat;
-        height: 55px;
-        background-position: center top 12%;
-        background-size: 100%;
-    }
-
-    .full-nav li {
-        display: inline-block;
-        padding: 25px 15px 15px 15px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    li a {
-        border-bottom: none;
-        font-size: 1.5rem;
-        padding: 25px 10px 5px 10px;
-    }
-
-    .list-top {
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .home:hover, .about:hover, .blog:hover, .contact:hover {
-        background: rgb(255,254,252);
-        background: linear-gradient(0deg, rgba(255,254,252,1) 0%, rgba(254,230,204,1) 100%);
-    } */
 }
